@@ -50,6 +50,7 @@ def password1 ():
 def crypt():
 
     import hashlib
+    global crypted_password
     crypted_password = hashlib.sha256(final_password.encode()).hexdigest()
 
 
